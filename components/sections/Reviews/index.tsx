@@ -32,7 +32,7 @@ export default function Reviews() {
               className="border border-white/10 p-7 flex flex-col gap-2 md:items-start items-center"
               animate={{opacity: [0, 1], y: [idx % 2 === 0 ? 20 : -20, 0], transition: { duration: 1, delay: 0.1 } }}
             >
-              <div className="flex  items-center gap-6">
+              <div className="flex  items-center gap-6 p-3 border border-black/10">
                 <div>
                   {r.photo ? (
                     <img

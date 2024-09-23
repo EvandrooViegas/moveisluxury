@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <SectionContainer className="md:grid md:grid-cols-2 flex-col-reverse gap-20  mt-12 md:mt-20 " bgClassName="relative" id="home">
       <div className="flex flex-col justify-center gap-8 z-[1]  ">
-      <span className="md:text-6xl text-[40px] font-black uppercase">Eventos <span className="bg-primary text-white">personalizados, </span>memórias eternas.</span>
+      <span className="md:text-6xl text-[40px] font-black uppercase">materiais e qualidade <span className="border-b border-b-primary">luxuosa</span>.</span>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
       <ContactUsBtn />
       </div>

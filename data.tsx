@@ -4,8 +4,8 @@ import { RiToothLine } from "react-icons/ri";
 const icon = <HiOutlineSpeakerphone />
 const data = {
   number: "123 456 789",
-  name: "Jandira Vaz",
-  email: "jandiravaz@gmail.com",
+  name: "Mobiliario",
+  email: "mobiliario@gmail.com",
   icon,
   location: ["Lisboa", "Portugal"],
   working_hours: [
@@ -164,6 +164,11 @@ const data = {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
     },
+  ],
+  steps: [
+    { title: "Lorem ipsum dolor sit amet", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title: "Lorem ipsum dolor sit amet", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title: "Lorem ipsum dolor sit amet", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
   ],
   booking_url: "google.com",
   clients_number: 430,

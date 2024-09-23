@@ -6,7 +6,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import ProvidersWrapper from "./ProvidersWrapper";
 import data from "@/data";
-const font = Poppins({ subsets: ["latin"], weight: "300" });
+const font = Poppins({ subsets: ["latin"],weight: "400" });
 
 export const metadata: Metadata = {
   title: `BEM-VINDO AO SITE DO ${data.name}`,
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`text-black ${font.className}`}>
-      <link rel="icon" href="/icon.png" sizes="any" />
+      <link rel="icon" href="/favicon.png" sizes="any" />
         <ProvidersWrapper>
           <Navbar/>
           {children}

@@ -10,6 +10,7 @@ import { useHeroIntersectionContext } from "@/app/heroIntersection.context";
 import { IoMdArrowUp } from "react-icons/io";
 import AnimateElement from "../AnimateElement";
 import ContactUsBtn from "../ContactUsBtn";
+import Marquee from "react-fast-marquee";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { inView } = useHeroIntersectionContext();
@@ -26,9 +27,14 @@ export default function Navbar() {
   return (
     <>
       <AnimateElement
-        className={`transition-all  bg-white text-black border-b border-b-black/10 fixed top-0 inset-x-0 p-8 nav-z max-screen-w mx-auto `}
+        className={`transition-all flex flex-col  bg-white text-black border-b border-b-black/10 fixed top-0 inset-x-0 nav-z max-screen-w mx-auto `}
       >
-        <nav className="flex full justify-between items-center">
+        <div className="bg-secondary text-black p-3 ">
+          <Marquee>
+            {`${data.name} | LIGUE AGORA ${data.number} | VISITE-NOS ${data.location} | CONTACTE-NOS ${data.email}`}
+          </Marquee>
+        </div>
+        <nav className="flex full justify-between items-center  py-4 px-8">
           <Logo />
 
           <button
@@ -37,7 +43,7 @@ export default function Navbar() {
           >
             <GiHamburgerMenu />
           </button>
-          <ul className="hidden md:flex font-semibold gap-8">
+          <ul className="hidden md:flex  gap-8">
             {links.map((l) => (
               <a href={l.href} key={l.href} className="hover:bg-primary hover:text-white py-1 hover:px-3 px-0 transition-all cursor-pointer">
                 <li>{l.name}</li>
@@ -45,7 +51,7 @@ export default function Navbar() {
             ))}
           </ul>
           <div className="hidden md:inline">
-            <ContactUsBtn />
+            <ContactUsBtn outline />
           </div>
         </nav>
         <div
@@ -76,7 +82,7 @@ export default function Navbar() {
                 </a>
               ))}
             </ul>
-            <ContactUsBtn />
+            <ContactUsBtn  />
           </div>
           </div>
         </div>

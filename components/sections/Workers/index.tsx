@@ -35,7 +35,7 @@ export default function Workers() {
       <div className="hidden md:grid grid-cols-4 gap-8">
         <AnimateElement className="relative   aspect-square" animate={{ y: [50, 0], opacity: [0, 1], rotate: [30, 0], transition: { delay: 0.3 } }}>
           <Image
-            src="/icon.png"
+            src="/draw.png"
             fill
             alt="Icon"
             className="object-contain "
