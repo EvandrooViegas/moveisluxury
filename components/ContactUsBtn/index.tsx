@@ -4,14 +4,15 @@ import { IoMdArrowForward } from "react-icons/io";
 
 type Props = {
   outline?: boolean;
+  whiteOutline?: boolean;
 };
 export default function ContactUsBtn(props: Props) {
-  const { outline } = props;
+  const { outline, whiteOutline} = props;
   return (
     <a
       className={`group flex items-center gap-2  w-fit px-5 py-2.5 rounded ${
         outline
-          ? "bg-transparent border border-primary text-primary"
+          ? `bg-transparent border ${whiteOutline ? '' : 'border-primary text-primary'}`
           : "bg-primary text-white"
       } `}
       href={data.booking_url}

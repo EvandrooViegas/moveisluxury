@@ -30,6 +30,10 @@ const config = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        sec: {
+          DEFAULT: "hsl(var(--sec))",
+          foreground: "hsl(var(--sec-foreground))",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

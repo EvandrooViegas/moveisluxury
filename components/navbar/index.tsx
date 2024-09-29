@@ -2,18 +2,14 @@
 import React, { useEffect, useState } from "react";
 import links from "./links";
 import data from "@/data";
-import { FaPhoneVolume } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import Logo from "../Logo";
-import { useHeroIntersectionContext } from "@/app/heroIntersection.context";
-import { IoMdArrowUp } from "react-icons/io";
 import AnimateElement from "../AnimateElement";
 import ContactUsBtn from "../ContactUsBtn";
 import Marquee from "react-fast-marquee";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const { inView } = useHeroIntersectionContext();
   useEffect(() => {
     if (open) {
       window.document.body.classList.remove("show-scrollbar");
@@ -87,16 +83,6 @@ export default function Navbar() {
           </div>
         </div>
       </AnimateElement>
-      <>
-        <a
-          href="#hero"
-          className={`transition-all z-[4] ${
-            inView ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
-          } fixed right-6 bottom-6 p-5 bg-white text-black`}
-        >
-          <IoMdArrowUp />
-        </a>
-      </>
     </>
   );
 }

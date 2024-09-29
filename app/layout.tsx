@@ -23,7 +23,10 @@ export default function RootLayout({
       <link rel="icon" href="/favicon.png" sizes="any" />
         <ProvidersWrapper>
           <Navbar/>
+          <main className="mt-[140px]">
+
           {children}
+          </main>
           <Footer />
         </ProvidersWrapper>
       </body>

@@ -1,21 +1,31 @@
-"use client";
 import ContactUsBtn from "@/components/ContactUsBtn";
 import SectionContainer from "@/components/SectionContainer";
-import Image from "next/image";
-
-export default function Hero() {
+export default function Example() {
   return (
-    <SectionContainer className="md:grid md:grid-cols-2 flex-col-reverse gap-20  mt-12 md:mt-20 " bgClassName="relative" id="home">
-      <div className="flex flex-col justify-center gap-8 z-[1]  ">
-      <span className="md:text-6xl text-[40px] font-black uppercase">materiais e qualidade <span className="border-b border-b-primary">luxuosa</span>.</span>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-      <ContactUsBtn />
+    <SectionContainer id="home" outside>
+      <div className="h-[85vh] relative bg-black ">
+        <video
+          className="absolute inset-0 object-cover  w-full h-full z-[0]"
+          loop
+          autoPlay
+          muted
+        >
+          <source src="/bg.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 z-[1] flex items-center justify-center bg-black/85">
+          <div className="text-white  gap-8 flex flex-col items-center justify-center text-center  ">
+            <h4 className="text-5xl font-black capitalize">
+              materiais e qualidade luxuosa.
+            </h4>
+            <p className="text-2xl text-neutral-200 capitalize max-w-[50%]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry`&apos;`s standard dummy text
+              ever since the 1500s
+            </p>
+            <ContactUsBtn outline whiteOutline />
+          </div>
+        </div>
       </div>
-      <div className="relative w-full md:h-full md:min-h-[400px]  h-[400px] mt-5 z-[1]">
-<Image src="/hero.jpg" alt="Hero" className="object-cover object-center rounded" fill />
-      </div>
-      <Image src="/bg.png" className="absolute object-cover z-[-1]" fill />
-
     </SectionContainer>
   );
 }

@@ -55,7 +55,7 @@ export default function Footer() {
 
       <AnimateElement className="flex flex-col md:flex-row items-center justify-between p-4 border-t text-neutral-400 border-t-neutral-600 my-auto">
             <span>Copyright © 2024 | {data.name}.</span>
-            <a className="underline" href="https://www.growvdigital.me">Made by Growv Digital</a>
+            <a className="underline" href="https://www.evandropkviegas.vercel.com">Made by Evandro Viegas</a>
       </AnimateElement>
     </SectionContainer>
   );
