@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <AnimateElement
+      <div
         className={`transition-all flex flex-col  bg-white text-black border-b border-b-black/10 fixed top-0 inset-x-0 nav-z max-screen-w mx-auto `}
       >
         <div className="bg-secondary text-black p-3 ">
@@ -82,7 +82,7 @@ export default function Navbar() {
           </div>
           </div>
         </div>
-      </AnimateElement>
+      </div>
     </>
   );
 }

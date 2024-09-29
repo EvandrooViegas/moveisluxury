@@ -19,8 +19,9 @@ export default function page() {
       <div className="flex flex-col justify-center items-center gap-10">
         {contacts.map((c) => (
           <Link
+          key={c.name}
             href={c.href}
-            className="text-6xl font-black flex items-center gap-3 text-neutral-500 hover:text-primary"
+            className="md:text-6xl text-3xl font-black flex items-center gap-3 text-neutral-500 hover:text-primary"
           >
             {c.icon}
             <span>{c.name}</span>
