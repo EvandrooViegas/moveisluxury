@@ -51,7 +51,7 @@ export default function Wrapper() {
       <div className="md:grid md:grid-cols-2 flex flex-col gap-6">
         {filteredPhotos.map((i, idx) => (
           <div key={idx}>
-            <div className="relative w-full h-80">
+            <div className="relative w-full md:h-[700px] h-80">
               <Image src={i.img} alt="Imagem" fill className="object-cover " />
             </div>
           </div>

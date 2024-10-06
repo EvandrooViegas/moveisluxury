@@ -50,18 +50,18 @@ export default function Services() {
 
 const services = [
   {
-    title: "Lorem Ipsum is simply",
+    title: "Mobiliário Sob Medida",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Criação de móveis exclusivos e personalizados para atender ao seu estilo e necessidades. Cada peça é feita à mão, garantindo que o seu espaço seja único e cheio de personalidade.",
   },
   {
-    title: "Lorem Ipsum is simply",
+    title: "Design Sofisticado e Acessível",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Oferecemos móveis com design contemporâneo, utilizando materiais premium e acabamentos de luxo, tudo a preços acessíveis. Beleza e elegância ao alcance de todos.",
   },
   {
-    title: "Lorem Ipsum is simply",
+    title: "Durabilidade e Conforto",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Nossos móveis são projetados para durar, com foco em conforto e funcionalidade. Combine estética de alto nível com a durabilidade que seu lar merece.",
   },
 ];

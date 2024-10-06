@@ -8,19 +8,14 @@ export default function page() {
       <AnimateElement className="flex flex-col gap-4 text-center">
         <span className="font-bold text-neutral-500 capitalize">SOBRE NÓS</span>
         <span className="font-bold  text-5xl capitalize">
-          NOSSAS INFORMAÇÕES
+        Qualidade Luxuosa
         </span>
       </AnimateElement>
     <p className="text-center">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry`&apos;`s standard dummy text ever since
-      the 1500s, when an unknown printer took a galley of type and scrambled it
-      to make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
+    Na Móveis Luxury, acreditamos que todos merecem viver rodeados de móveis de alta qualidade sem precisar comprometer o orçamento. Fundada por Vieira Lopes, a nossa empresa oferece mobiliário artesanal com design sofisticado e atenção ao detalhe, tudo a um preço acessível.
+Combinamos a elegância de materiais premium e acabamentos refinados com um compromisso de criar soluções de mobiliário personalizadas, que se adaptam a qualquer estilo de vida. Cada peça que criamos é única e feita sob medida, garantindo que o seu espaço tenha o toque luxuoso que merece, sem perder de vista a funcionalidade.
+Na Móveis Luxury, a nossa missão é trazer o luxo acessível para o seu lar, com móveis que unem estética, conforto e durabilidade.
+
     </p>
     </SectionContainer>
   );

@@ -12,11 +12,18 @@ export default function Gallery() {
         <span className="font-bold  text-5xl capitalize">Trabalhos recentes</span>
       </AnimateElement>
       <div className="md:grid md:grid-cols-3 flex flex-col gap-6">
-        {arr.map((i, idx) => (
-          <div className="relative w-full h-80" key={idx}>
-            <Image src="/services/1.jpg" alt="Imagem" fill />
+          <div className="relative w-full h-80">
+            <Image src="/portfolio/1.jpg" alt="Imagem" className="object-cover" fill />
           </div>
-        ))}
+          <div className="relative w-full h-80">
+            <Image src="/portfolio/2.jpg" alt="Imagem" className="object-cover" fill />
+          </div>
+          <div className="relative w-full h-80">
+            <Image src="/portfolio/3.jpg" alt="Imagem" className="object-cover" fill />
+          </div>
+          <div className="relative w-full h-80">
+            <Image src="/portfolio/4.jpg" alt="Imagem" className="object-cover" fill />
+          </div>
       </div>
     </SectionContainer>
   );
