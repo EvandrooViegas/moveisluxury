@@ -3,7 +3,7 @@ import SectionContainer from "../../SectionContainer";
 import AnimateElement from "@/components/AnimateElement";
 import Image from "next/image";
 
-const arr = Array(9).fill(0);
+const arr = Array(4).fill(0);
 export default function Gallery() {
   return (
     <SectionContainer id="gallery" className="space-y-20">
@@ -12,18 +12,11 @@ export default function Gallery() {
         <span className="font-bold  text-5xl capitalize">Trabalhos recentes</span>
       </AnimateElement>
       <div className="md:grid md:grid-cols-3 flex flex-col gap-6">
-          <div className="relative w-full h-80">
-            <Image src="/portfolio/1.jpeg" alt="Imagem" className="object-cover" fill />
+        {arr.map((i, idx) => (
+          <div className="relative w-full md:h-[550px] h-80" key={idx}>
+            <Image src={`/portfolio/${idx + 1}.jpeg`} className="object-cover" alt="Imagem" fill />
           </div>
-          <div className="relative w-full h-80">
-            <Image src="/portfolio/2.jpeg" alt="Imagem" className="object-cover" fill />
-          </div>
-          <div className="relative w-full h-80">
-            <Image src="/portfolio/3.jpeg" alt="Imagem" className="object-cover" fill />
-          </div>
-          <div className="relative w-full h-80">
-            <Image src="/portfolio/4.jpeg" alt="Imagem" className="object-cover" fill />
-          </div>
+        ))}
       </div>
     </SectionContainer>
   );
