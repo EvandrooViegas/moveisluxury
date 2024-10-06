@@ -13,16 +13,16 @@ export default function Gallery() {
       </AnimateElement>
       <div className="md:grid md:grid-cols-3 flex flex-col gap-6">
           <div className="relative w-full h-80">
-            <Image src="/portfolio/1.jpg" alt="Imagem" className="object-cover" fill />
+            <Image src="/portfolio/1.jpeg" alt="Imagem" className="object-cover" fill />
           </div>
           <div className="relative w-full h-80">
-            <Image src="/portfolio/2.jpg" alt="Imagem" className="object-cover" fill />
+            <Image src="/portfolio/2.jpeg" alt="Imagem" className="object-cover" fill />
           </div>
           <div className="relative w-full h-80">
-            <Image src="/portfolio/3.jpg" alt="Imagem" className="object-cover" fill />
+            <Image src="/portfolio/3.jpeg" alt="Imagem" className="object-cover" fill />
           </div>
           <div className="relative w-full h-80">
-            <Image src="/portfolio/4.jpg" alt="Imagem" className="object-cover" fill />
+            <Image src="/portfolio/4.jpeg" alt="Imagem" className="object-cover" fill />
           </div>
       </div>
     </SectionContainer>
