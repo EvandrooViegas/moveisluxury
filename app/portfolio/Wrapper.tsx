@@ -40,7 +40,7 @@ export default function Wrapper() {
             key={q}
             className={`text-lg  border  ${
               isSelected(q) ? "border-primary text-primary" : "text-neutral-600"
-            } rounded-full px-3 py-1.5 `}
+            } rounded-full px-3 py-1 `}
           >
             {q}
           </div>
@@ -64,8 +64,8 @@ export default function Wrapper() {
 const queryArr = ["cozinha", "loja", "quarto"];
 
 const photos = [
-  { img: "/portfolio/1.jpg", filters: [queryArr[0]] },
-  { img: "/portfolio/2.jpg", filters: [queryArr[1], queryArr[0]] },
-  { img: "/portfolio/3.jpg", filters: [queryArr[1]] },
-  { img: "/portfolio/4.jpg", filters: [queryArr[2]] },
+  { img: "/portfolio/1.jpeg", filters: [queryArr[0]] },
+  { img: "/portfolio/2.jpeg", filters: [queryArr[0]] },
+  { img: "/portfolio/3.jpeg", filters: [queryArr[0]] },
+  { img: "/portfolio/4.jpeg", filters: [queryArr[0]] },
 ];
